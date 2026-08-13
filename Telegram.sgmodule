@@ -1,0 +1,9 @@
+#!name=Telegram Redirect
+#!desc=Redirect t.me links to Telegram
+#!category=Utility
+
+[Script]
+TelegramRedirect = type=http-request,pattern=^https?://t\.me/.+,script-path=./TgRedirect.js,timeout=5
+
+[MITM]
+hostname = %APPEND% t.me

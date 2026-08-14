@@ -1,9 +1,9 @@
-#!name=Telegram Redirect
-#!desc=Redirect t.me links to Telegram
-#!category=Utility
+#!name=Telegram 跳转
+#!desc=将 t.me 链接跳转到指定 Telegram 客户端
+#!arguments=客户端:Telegram
 
 [Script]
-TelegramRedirect = type=http-request,pattern=^https?://t\.me/.+,script-path=./TgRedirect.js,timeout=5
+TelegramRedirect = type=http-request,pattern=^https?://t\.me/.+,script-path=./TgRedirect.js,argument={{{客户端}}},timeout=5
 
 [MITM]
 hostname = %APPEND% t.me

@@ -1,10 +1,10 @@
 #!name=Telegram 跳转
 #!desc=将 t.me 链接跳转到指定 Telegram 客户端
 #!category=IAUN
-#!arguments=客户端=Telegram
+#!arguments=CLIENT:Telegram
 
 [Script]
-TelegramRedirect = type=http-request,pattern=^https?://t\.me/.+,script-path=https://raw.githubusercontent.com/X-IAUN/Surge-module/main/TgRedirect.js,argument=客户端={{{客户端}}},timeout=5
+TelegramRedirect = type=http-request,pattern=^https?://(t\.me|telegram\.me)/.+,script-path=https://raw.githubusercontent.com/X-IAUN/Surge-module/main/TgRedirect.js,argument=CLIENT={{{CLIENT}}},timeout=10
 
 [MITM]
-hostname = %APPEND% t.me
+hostname = %APPEND% t.me, telegram.me

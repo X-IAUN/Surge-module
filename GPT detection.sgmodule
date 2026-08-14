@@ -1,0 +1,7 @@
+#!name=ChatGPT检测
+#!desc=ChatGPT检测
+#!category=IAUN
+[Panel]
+ChatGPT检测 = script-name=ChatGPT检测
+[Script]
+ChatGPT检测 = type=generic,script-path=https://raw.githubusercontent.com/X-IAUN/Surge-module/refs/heads/main/GPT%20detection.js,argument=icon=ellipses.bubble.fill&icon-color=#4a4b54

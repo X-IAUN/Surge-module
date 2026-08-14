@@ -1,18 +1,21 @@
-const client = String($argument || "").trim();
+const rawArgument = String($argument || "").trim();
 
+const client = rawArgument
+  .replace(/^CLIENT=/i, "")
+  .trim();
+
+console.log("RAW ARGUMENT =", rawArgument);
 console.log("CLIENT =", client);
 console.log("URL =", $request.url);
 
-// 测试 Swiftgram
 if (client === "Swiftgram") {
   const match = $request.url.match(
     /^https?:\/\/(?:t\.me|telegram\.me)\/(.+)$/i
   );
 
   if (match) {
-    const path = match[1].split("?")[0];
-
-    const parts = path
+    const parts = match[1]
+      .split("?")[0]
       .split("/")
       .filter(Boolean);
 
@@ -35,7 +38,7 @@ if (client === "Swiftgram") {
         }
       }
 
-      console.log("Swiftgram TEST =", location);
+      console.log("REDIRECT =", location);
 
       $done({
         response: {

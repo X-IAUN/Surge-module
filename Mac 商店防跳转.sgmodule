@@ -1,0 +1,9 @@
+#!name=App Store 地区保持
+#!desc=阻止 apps.apple.com 的 CN 地区跳转
+#!system=mac
+
+[URL Rewrite]
+^https?://apps\.apple\.com/cn/(.*)$ https://apps.apple.com/us/$1 302
+
+[MITM]
+hostname = %APPEND% apps.apple.com

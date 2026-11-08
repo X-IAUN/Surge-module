@@ -1,7 +1,6 @@
 #!name=流媒体解锁检测
 #!desc=检测当前策略组所选节点的流媒体与 AI 服务区域可用性
-#!category=网络工具
-
+#!category=IAUN
 [Panel]
 流媒体解锁 = title="流媒体解锁",content="正在逐个平台实测…\n\n十六家平台各发一次真实请求，一般 3 秒出结果。\n点右上角的刷新按钮可以立即重测。",style=info,script-name=流媒体解锁,update-interval=1800
 

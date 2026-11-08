@@ -3,7 +3,7 @@
 #!category=网络工具
 
 [Panel]
-流媒体检测 = title="流媒体检测",content="点击面板刷新按钮开始检测\n检测结果取决于当前策略组所选节点",icon="play.rectangle.on.rectangle",icon-color="#34C759",script-name=streaming-check,update-interval=3600
+流媒体解锁 = title="流媒体解锁",content="正在逐个平台实测…\n\n十六家平台各发一次真实请求，一般 3 秒出结果。\n点右上角的刷新按钮可以立即重测。",style=info,script-name=流媒体解锁,update-interval=1800
 
 [Script]
-streaming-check = type=generic,timeout=40,script-path=https://raw.githubusercontent.com/X-IAUN/Surge-module/main/StreamingMedia.js,script-update-interval=86400,argument=group=Proxy
+流媒体解锁 = type=generic,script-path=https://raw.githubusercontent.com/X-IAUN/Surge-module/refs/heads/main/媒体解锁检测.js,script-update-interval=86400,argument="填写策略组名||填写要测的平台",timeout=120

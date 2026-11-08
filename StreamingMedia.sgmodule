@@ -1,0 +1,9 @@
+#!name=流媒体解锁检测
+#!desc=检测当前策略组所选节点的流媒体与 AI 服务区域可用性
+#!category=网络工具
+
+[Panel]
+流媒体检测 = title="流媒体检测",content="点击面板刷新按钮开始检测\n检测结果取决于当前策略组所选节点",icon="play.rectangle.on.rectangle",icon-color="#34C759",script-name=streaming-check,update-interval=3600
+
+[Script]
+streaming-check = type=generic,timeout=40,script-path=https://raw.githubusercontent.com/X-IAUN/Surge-module/main/StreamingMedia.js,script-update-interval=86400,argument=group=Proxy

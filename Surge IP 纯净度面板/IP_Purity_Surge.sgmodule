@@ -9,4 +9,4 @@
 IP-Pure = script-name=IP-Pure, title=IP 纯净度, content=刷新中…, style=info, update-interval=300
 
 [Script]
-IP-Pure = type=generic, timeout=10, argument=Proxy={{{Proxy}}}&MarkIP={{{MarkIP}}}, script-path=https://raw.githubusercontent.com/vfelix7/rule_module_script/master/surge/scripts/IP_Purity_Surge_Panel.js, script-update-interval=86400
+IP-Pure = type=generic, timeout=10, argument=Proxy={{{Proxy}}}&MarkIP={{{MarkIP}}}, script-path=https://github.com/X-IAUN/Surge-module/raw/refs/heads/main/Surge%20IP%20纯净度面板/IP_Purity_Surge_Panel.js, script-update-interval=86400

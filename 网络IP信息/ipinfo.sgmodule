@@ -1,0 +1,8 @@
+#!name=网络IP信息
+#!desc=检测网络信息
+#!category=IAUN
+[Panel]
+网络IP信息 = title="网络IP信息",content="SSID: -\n\n本地 IP: -\n位置: -\n运营商: -\n\n────────────────\n◆策略: -\n入口: -\n位置: -\n运营商: -\n\n落地 IP: -\n位置: -\n运营商: -\n\n执行时间: -",style=info,script-name=网络IP信息,update-interval=600
+
+[Script]
+网络IP信息 = type=generic,script-path=https://raw.githubusercontent.com/X-IAUN/Surge-module/refs/heads/main/网络IP信息/ipinfo.js,script-update-interval=86400,argument="填写策略组名",timeout=45
